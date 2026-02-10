@@ -1,0 +1,44 @@
+/* Minimal CSS variables for easy theming */
+:root{
+  --color-bg:#ffffff;
+  --color-text:#0f1720;
+  --color-accent:#0a84ff;
+  --color-accent-contrast:#ffffff;
+  --max-width:1100px;
+  --space:1rem;
+  --radius:8px;
+  --font-sans:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:var(--font-sans);color:var(--color-text);background:var(--color-bg);line-height:1.5}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 calc(var(--space) * 1.25)}
+
+.site-header{background:transparent;padding:calc(var(--space) * 1);position:sticky;top:0}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;color:var(--color-text);text-decoration:none}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.nav a{text-decoration:none;color:var(--color-text)}
+
+.hero{padding:4rem 0;text-align:center}
+.hero .lead{font-size:1.125rem;color:rgba(15,23,32,0.8)}
+.btn{display:inline-block;padding:0.75rem 1rem;border-radius:var(--radius);text-decoration:none}
+.btn.primary{background:var(--color-accent);color:var(--color-accent-contrast)}
+.btn.outline{border:1px solid rgba(15,23,32,0.08);background:transparent}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.features article{background:rgba(10,132,255,0.04);padding:1rem;border-radius:8px}
+
+.site-footer{padding:2rem 0;text-align:center;color:rgba(15,23,32,0.6)}
+
+/* Forms */
+form{max-width:520px}
+label{display:block;margin:0.5rem 0 0.25rem}
+input,textarea{width:100%;padding:0.5rem;border:1px solid #e6e9ee;border-radius:6px}
+
+/* Responsive small screens */
+@media (max-width:600px){
+  .nav ul{display:none}
+  .hero{padding:3rem 0}
+}
