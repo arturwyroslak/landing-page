@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Twoja Strona - Landing Page</title>
+  <meta name="description" content="Minimalny, responsywny landing page gotowy do personalizacji.">
+  <meta name="theme-color" content="#0a84ff">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Twoja Strona - Landing Page">
+  <meta property="og:description" content="Minimalny, responsywny landing page gotowy do personalizacji.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="#">LOGO</a>
+      <nav class="nav" role="navigation" aria-label="Główne menu">
+        <ul>
+          <li><a href="#features">Funkcje</a></li>
+          <li><a href="#testimonials">Opinie</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Zbuduj coś wyjątkowego</h1>
+        <p class="lead">Szybki, prosty i w pełni konfigurowalny landing page.</p>
+        <p>
+          <a class="btn primary" href="#contact">Skontaktuj się</a>
+          <a class="btn outline" href="#features">Dowiedz się więcej</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Funkcje</h2>
+        <div class="grid">
+          <article>
+            <h3>Responsywny</h3>
+            <p>Mobile-first layout z łatwą konfiguracją kolorów i typografii.</p>
+          </article>
+          <article>
+            <h3>Dostępność</h3>
+            <p>Semantyczne elementy, ARIA i logiczna nawigacja klawiaturą.</p>
+          </article>
+          <article>
+            <h3>Łatwa personalizacja</h3>
+            <p>Zmieniaj zmienne CSS, teksty i obrazy, aby dopasować stronę.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title">Opinie</h2>
+        <blockquote>
+          <p>"Prosty szablon, który pozwolił nam wystartować w jeden dzień."</p>
+          <cite>- Zadowolony klient</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Skontaktuj się</h2>
+        <form id="contact-form" action="#" method="post" aria-label="Formularz kontaktowy">
+          <label for="name">Imię</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Wiadomość</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn primary">Wyślij</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <small>© <span id="year"></span> Twoja Firma. Wszelkie prawa zastrzeżone.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
